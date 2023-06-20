@@ -34,7 +34,7 @@ $connexion = mysqli_connect($serveur, $utilisateur, $motdepasse, $basededonnees)
 		echo "Êtes-vous sûr de vouloir supprimer ce contact ?";
 		echo "<form action='supprimer.php?id=$id' method='post'>";
 		echo "<input type='submit' value='Oui'>";
-		echo "<a href='index.php'>Non</a>";
+		echo "<a href='admin.php'>Non</a>";
 		echo "</form>";
 	}
 

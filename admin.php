@@ -2,10 +2,13 @@
 <html>
 <head>
 	<title>Liste des contacts</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
 </head>
 <body>
 	<h1>Liste des contacts</h1>
-	<table>
+	<table class="table">
+		<thead>
 		<tr>
 			<th>Nom</th>
 			<th>Prénom</th>
@@ -17,6 +20,7 @@
 			<th>Commentaire</th>
 			<th>Actions</th>
 		</tr>
+		</thead>
 		<?php
 		// Connexion à la base de données
 		$serveur = "localhost";
@@ -54,5 +58,6 @@ $basededonnees = "webintel";
 		$conn->close();
 		?>
 	</table>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
